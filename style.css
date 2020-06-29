@@ -1,0 +1,118 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.nav-bg {
+  position: fixed;
+  height: 10vh;
+  width: 100%;
+  background-color: black;
+  opacity: 0.4;
+}
+
+.navigation {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #FBFAF8;
+  height: 10vh;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigation .logo {
+  font-family: 'Parisienne', cursive;
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  text-align: center;
+}
+
+.navigation .logo a {
+  font-size: 3em;
+  text-decoration: none;
+  letter-spacing: 5px;
+  color: #FBFAF8;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.navigation .logo a:hover {
+  color: #c3b497;
+}
+
+.navigation .top-menu {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  font-family: 'Raleway', sans-serif;
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+}
+
+.navigation .top-menu .menu-item a {
+  color: #FBFAF8;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  padding: 10px 20px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.navigation .top-menu .menu-item a:hover {
+  color: #c3b497;
+}
+
+.navigation .socialmedias {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+  text-align: center;
+}
+
+.navigation .socialmedias a {
+  padding: 0 10px;
+  color: #FBFAF8;
+  text-decoration: none;
+  font-weight: 300;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.navigation .socialmedias a:hover {
+  color: #c3b497;
+}
+
+.navigation .burger {
+  display: none;
+}
+
+@media (max-width: 1024px) {
+  .navigation .logo {
+    margin-left: 15px;
+  }
+  .navigation .logo a {
+    font-size: 2.5em;
+  }
+  .navigation .top-menu .menu-item a {
+    font-size: 0.9em;
+    font-weight: 500;
+    padding: 10px 10px;
+  }
+}
+
+.main {
+  height: 100vh;
+  background-image: url(/img/breads.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,101 @@
+// font-family: 'Parisienne', cursive;
+$font-color-nav: #FBFAF8;
+
+*{
+    padding:0;
+    margin:0;
+}
+.nav-bg{
+    position: fixed;
+    height: 10vh;
+    width:100%;
+    background-color: black;
+    opacity:0.4;
+}
+.navigation{
+    position: fixed;
+    display: flex;
+    color: $font-color-nav;
+    height: 10vh;
+    width:100%;
+    align-items: center;
+    .logo{
+        font-family: 'Parisienne', cursive;
+        flex-basis: 20%;
+        text-align: center;
+        a{
+            font-size: 3em;
+            text-decoration: none;
+            letter-spacing: 5px;
+            color: $font-color-nav;
+            transition: 0.4s;
+        }
+        a:hover{
+            color: darken($font-color-nav, 30%);
+        }
+    }
+    .top-menu{
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        font-family: 'Raleway', sans-serif;
+        flex-basis: 60%;
+        .menu-item{
+            a{
+                color: $font-color-nav;
+                display: block;
+                text-decoration: none;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                font-weight: 700;
+                padding: 10px 20px;
+                transition: 0.4s;
+            }
+            a:hover{
+                color: darken($font-color-nav, 30%);
+            }
+        }
+    }
+    .socialmedias{
+        flex-basis: 20%;
+        text-align: center;
+        a{
+            padding: 0 10px;
+            color:$font-color-nav;
+            text-decoration: none;
+            font-weight: 300;
+            transition: 0.4s;
+        }
+        a:hover{
+            color: darken($font-color-nav, 30%);
+        }
+    }
+    .burger{
+        display: none;
+    }
+}
+
+@media(max-width:1024px){
+    .navigation{
+        .logo{
+            margin-left: 15px;
+            a{
+                font-size: 2.5em;
+            }
+        }
+        .top-menu{
+            .menu-item{
+                a{
+                    font-size: 0.9em;
+                    font-weight: 500;
+                    padding:10px 10px;
+                }
+            }
+        }
+    }
+}
+@media(max-width:768px) and (orientation: portrait){
+    // .navigation{
+        
+    // }
+}
