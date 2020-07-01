@@ -5,13 +5,7 @@ $font-color-nav: #FBFAF8;
     padding:0;
     margin:0;
 }
-.nav-bg{
-    position: fixed;
-    height: 10vh;
-    width:100%;
-    background-color: black;
-    opacity:0.4;
-}
+
 .bgc{
     display: none;
     position: absolute;
@@ -21,6 +15,7 @@ $font-color-nav: #FBFAF8;
     background-color: #000;
     opacity: 0.6;
     transition: 0.3s ease;
+    z-index: 98;
 }
 .bgc.active{
     display: block;
@@ -29,9 +24,14 @@ $font-color-nav: #FBFAF8;
     position: fixed;
     display: flex;
     color: $font-color-nav;
+    background-color: rgba(0,0,0,0.4);
     height: 10vh;
     width:100%;
     align-items: center;
+    z-index: 99;
+    margin:auto;
+    left:0;
+    right:0;
     .logo{
         font-family: 'Parisienne', cursive;
         flex-basis: 20%;
@@ -49,28 +49,32 @@ $font-color-nav: #FBFAF8;
             color: darken($font-color-nav, 30%);
         }
     }
-    .top-menu{
-        list-style: none;
-        display: flex;
-        justify-content: space-around;
-        font-family: 'Raleway', sans-serif;
+    nav{
         flex-basis: 60%;
-        .menu-item{
-            a{
-                color: $font-color-nav;
-                display: block;
-                text-decoration: none;
-                text-transform: uppercase;
-                letter-spacing: 2px;
-                font-weight: 700;
-                padding: 10px 20px;
-                transition: 0.4s;
-                text-shadow: 6px -1px 11px rgba(0,0,0,0.5);
-            }
-            a:hover{
-                color: darken($font-color-nav, 30%);
+        .top-menu{
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            font-family: 'Raleway', sans-serif;
+            
+            .menu-item{
+                a{
+                    color: $font-color-nav;
+                    display: block;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                    font-weight: 700;
+                    padding: 10px 20px;
+                    transition: 0.4s;
+                    text-shadow: 6px -1px 11px rgba(0,0,0,0.5);
+                }
+                a:hover{
+                    color: darken($font-color-nav, 30%);
+                }
             }
         }
+
     }
     .socialmedias{
         flex-basis: 20%;
@@ -98,16 +102,18 @@ $font-color-nav: #FBFAF8;
             a{
                 font-size: 2.5em;
             }
-        }
-        .top-menu{
-            .menu-item{
-                a{
-                    font-size: 0.9em;
-                    font-weight: 500;
-                    padding:10px 10px;
+        }nav{
+            .top-menu{
+                .menu-item{
+                    a{
+                        font-size: 0.9em;
+                        font-weight: 500;
+                        padding:10px 10px;
+                    }
                 }
             }
         }
+        
     }
 }
 @media(max-width:768px){
@@ -119,27 +125,30 @@ $font-color-nav: #FBFAF8;
         .logo{
             margin-left: 50px;
         }
-        .top-menu{
-            position: fixed;
-            top: 10vh;
-            right:-50vw;
-            width: 50vw;
-            height: 100vh;
-            display: block;
-            background-color: #564D49;
-            transition: 0.2s ease;
-            .menu-item{
-                line-height: 20px;
-                margin-top: 50px;
-                a{
-                    margin-left: 30px;
-                    font-size: 1.2em;
+        nav{
+            .top-menu{
+                position: fixed;
+                top: 10vh;
+                right:-50vw;
+                width: 50vw;
+                height: 100vh;
+                display: block;
+                background-color: #564D49;
+                transition: 0.2s ease;
+                .menu-item{
+                    line-height: 20px;
+                    margin-top: 50px;
+                    a{
+                        margin-left: 30px;
+                        font-size: 1.2em;
+                    }
                 }
             }
+            .top-menu.active{
+                right:0;
+            }
         }
-        .top-menu.active{
-            right:0;
-        }
+        
         .socialmedias{
             display: none;
         }
@@ -183,26 +192,22 @@ $font-color-nav: #FBFAF8;
     }
 }
 @media(max-width: 768px) and (orientation:landscape){
-    .nav-bg{
-        height: 15vh;
-    }
     .bgc{
         top:15vh;
     }
     .navigation{
         height:15vh;
-        .top-menu{
-            top:15vh;
-            .menu-item{
-                margin-top: 15px;
+        nav{
+            .top-menu{
+                top:15vh;
+                .menu-item{
+                    margin-top: 15px;
+                }
             }
         }
     }
 }
 @media(max-width:568px) and (orientation:landscape){
-    .nav-bg{
-        height: 20vh;
-    }
     .bgc{
         top:20vh;
     }
@@ -218,9 +223,11 @@ $font-color-nav: #FBFAF8;
 }
 @media(max-width:425px){
     .navigation{
-        .top-menu{
-            width: 60vw;
-            right:-60vw;
+        nav{
+            .top-menu{
+                width: 60vw;
+                right:-60vw;
+            }
         }
     }
 }
@@ -232,11 +239,13 @@ $font-color-nav: #FBFAF8;
                 font-size: 2em;
             }
         }
-        .top-menu{
-            .menu-item{
-                margin-top: 15px;
-                a{
-                    margin-left:5px;
+        nav{
+            .top-menu{
+                .menu-item{
+                    margin-top: 15px;
+                    a{
+                        margin-left:5px;
+                    }
                 }
             }
         }

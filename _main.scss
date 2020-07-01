@@ -1,8 +1,86 @@
 // font-family: 'Raleway', sans-serif;
+// font-family: 'Source Serif Pro', serif;
+$font-color-nav: #FBFAF8;
 .main{
-    height:100vh;
+    height:90vh;
     background-image: url(/img/breads.png);
     background-size: 100% auto;
     background-repeat: no-repeat;
-    z-index: 98;
+    color: $font-color-nav;
+    h1{
+        position: relative;
+        text-align: center;
+        width: 50%;
+        top: 25%;
+        left:25%;
+        color: $font-color-nav;
+        font-family: 'Source Serif Pro', serif;
+        font-size: 7em;
+        letter-spacing: 3px;
+        font-weight: 400;
+        text-shadow: 6px -1px 11px rgba(0,0,0,0.5);
+    }
+    h3{
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.5em;
+        font-weight: 400;
+        position: relative;
+        top: 40%;
+        width:50%;
+        left: 25%;
+        letter-spacing: 3px;
+        text-align: center;
+        line-height: 50px;
+        text-shadow: 6px -1px 11px rgba(0,0,0,0.5);
+    }
+    #menu-btn{
+        position: relative;
+        display: block;
+        font-family: 'Raleway', sans-serif;
+        width: 200px;
+        height: 50px;
+        top: 45%;
+        left: calc(50% - 100px);
+        color:#fff;
+        background-color: rgba(0,0,0,0.4);
+        border: 1px dashed $font-color-nav;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 700;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+    #menu-btn:hover{
+        background-color: rgba(0,0,0,0.8);
+        color: darken($font-color-nav, 30%);
+    }
 }
+@media(max-width:1440px){
+    .main{
+        h1{
+            font-size: 5em;
+            top: 20%;
+        }
+        h3{
+            top:35%;
+        }
+        #menu-btn{
+            top:40%;
+        }
+    }
+}
+@media(max-width:1024px){
+    .main{
+        h1{
+            font-size: 4em;
+            top: 15%;
+        }
+        h3{
+            top:20%;
+        }
+        #menu-btn{
+            top:25%;
+        }
+    }
+}
+ 
