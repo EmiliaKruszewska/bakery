@@ -4,7 +4,7 @@ $font-color-nav: #FBFAF8;
 .main{
     height:90vh;
     background-image: url(/img/breads.png);
-    background-size: 100% auto;
+    background-size: cover;//100% auto;
     background-repeat: no-repeat;
     color: $font-color-nav;
     h1{
@@ -20,9 +20,9 @@ $font-color-nav: #FBFAF8;
         font-weight: 400;
         text-shadow: 6px -1px 11px rgba(0,0,0,0.5);
     }
-    h3{
+    h2{
         font-family: 'Raleway', sans-serif;
-        font-size: 1.5em;
+        font-size: 2.7em;
         font-weight: 400;
         position: relative;
         top: 40%;
@@ -30,17 +30,18 @@ $font-color-nav: #FBFAF8;
         left: 25%;
         letter-spacing: 3px;
         text-align: center;
-        line-height: 50px;
+        line-height: 70px;
         text-shadow: 6px -1px 11px rgba(0,0,0,0.5);
     }
     #menu-btn{
         position: relative;
         display: block;
         font-family: 'Raleway', sans-serif;
-        width: 200px;
-        height: 50px;
+        width: 400px;
+        height: 70px;
+        font-size: 1.5em;
         top: 45%;
-        left: calc(50% - 100px);
+        left: calc(50% - 200px);
         color:#fff;
         background-color: rgba(0,0,0,0.4);
         border: 1px dashed $font-color-nav;
@@ -61,7 +62,7 @@ $font-color-nav: #FBFAF8;
             font-size: 5em;
             top: 20%;
         }
-        h3{
+        h2{
             top:35%;
         }
         #menu-btn{
@@ -69,17 +70,60 @@ $font-color-nav: #FBFAF8;
         }
     }
 }
-@media(max-width:1024px){
+@media(max-width:1225px){
     .main{
         h1{
             font-size: 4em;
-            top: 15%;
+            top: 20%;
         }
-        h3{
-            top:20%;
+        h2{
+            top:30%;
         }
         #menu-btn{
-            top:25%;
+            top:35%;
+        }
+    }
+}
+@media(max-width:768px){
+    .main{
+        h1{
+            font-size: 2.5em;
+            top: 20%;
+        }
+        h2{
+            font-size: 1em;
+            top:30%;
+            line-height: 30px;
+        }
+        #menu-btn{
+            top:35%;
+        }
+    }
+}
+@media(max-width:414px){
+    .main{
+        h1{
+            font-size: 3em;
+            width: 70%;
+            left: calc(50% - 35%);
+            top: 18%;
+        }
+        h2{
+            font-size: 1em;
+            top:30%;
+            line-height: 30px;
+            width: 70%;
+            left: calc(50% - 35%);
+        }
+        #menu-btn{
+            top:45%;
+        }
+    }
+}
+@media(max-width:320px){
+    .main{
+        #menu-btn{
+            top:35%;
         }
     }
 }
