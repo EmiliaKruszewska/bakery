@@ -84,19 +84,33 @@ $font-color-nav: #FBFAF8;
         }
     }
 }
-@media(max-width:768px){
+@media(max-width:1024px) and (orientation:landscape){
+    .main{
+        h2{
+            top:30%;
+            font-size: 2em;
+            line-height: 45px;
+        }
+        #menu-btn{
+            top:40%;
+            font-size: 1.3em;
+        }
+    }
+}
+@media(max-width:768px) and (orientation:portrait){
     .main{
         h1{
-            font-size: 2.5em;
+            font-size: 4em;
             top: 20%;
         }
         h2{
-            font-size: 1em;
+            font-size: 1.5em;
             top:30%;
-            line-height: 30px;
+            line-height: 40px;
         }
         #menu-btn{
-            top:35%;
+            top:55%;
+            font-size: 1.2em;
         }
     }
 }
