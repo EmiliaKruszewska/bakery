@@ -38,7 +38,7 @@ $font-color-nav: #FBFAF8;
         text-align: center;
         margin-left: 70px;
         a{
-            font-size: 3em;
+            font-size: 4em;
             text-decoration: none;
             letter-spacing: 5px;
             color: $font-color-nav;
@@ -61,6 +61,7 @@ $font-color-nav: #FBFAF8;
                 a{
                     color: $font-color-nav;
                     display: block;
+                    font-size: 1.5em;
                     text-decoration: none;
                     text-transform: uppercase;
                     letter-spacing: 2px;
@@ -85,6 +86,9 @@ $font-color-nav: #FBFAF8;
             text-decoration: none;
             font-weight: 300;
             transition: 0.4s;
+            i{
+                font-size: 1.5em;
+            }
         }
         a:hover{
             color: darken($font-color-nav, 30%);
