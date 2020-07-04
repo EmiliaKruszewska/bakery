@@ -475,7 +475,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 70vh;
+  height: 850px;
   padding: 7% 15% 0 10%;
 }
 
@@ -487,7 +487,7 @@
 
 .article-one .article-one-text h3 {
   font-family: 'Parisienne', cursive;
-  font-size: 4em;
+  font-size: 3em;
 }
 
 .article-one .article-one-text p {
@@ -495,7 +495,7 @@
 }
 
 .article-one .article-one-text p:nth-of-type(1) {
-  font-size: 1.3em;
+  font-size: 1em;
   text-transform: uppercase;
   color: #CBAB8D;
   letter-spacing: 2px;
@@ -505,13 +505,13 @@
 
 .article-one .article-one-text p:nth-of-type(2) {
   line-height: 45px;
-  margin: 0 150px 50px 100px;
-  font-size: 1.5em;
+  margin: 0 100px 50px 100px;
+  font-size: 1.2em;
 }
 
 .article-one .article-one-text h4 {
   font-family: 'Parisienne', cursive;
-  font-size: 2.5em;
+  font-size: 2em;
 }
 
 .article-one .article-one-text .chef-photo {
@@ -547,7 +547,7 @@
 
 .article-one .article-one-image img {
   position: relative;
-  width: 750px;
+  width: 600px;
   top: 5%;
 }
 
@@ -937,7 +937,18 @@
 @media (max-width: 1960px) {
   .article-two .article-two-container {
     width: 1500px;
+    height: 600px;
     left: calc(50% - 750px);
+    top: calc(50% - 350px);
+  }
+  .article-two .article-two-container .container-two-image img {
+    height: 600px;
+  }
+  .article-two .article-two-container .container-two-text h3 {
+    font-size: 3em;
+  }
+  .article-two .article-two-container .container-two-text p:nth-of-type(1) {
+    font-size: 1em;
   }
   .article-two .article-two-container .container-two-text p:nth-of-type(2) {
     line-height: 45px;
@@ -945,10 +956,10 @@
     font-size: 1.5em;
   }
   .article-two .article-two-container .container-two-text .slider {
-    margin-top: 70px;
+    margin-top: 0px;
   }
   .article-two .article-two-container .container-two-text .slider img {
-    width: 150px;
+    width: 120px;
   }
 }
 

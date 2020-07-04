@@ -68,23 +68,39 @@ $font-color-art:#CBAB8D;
     .article-two{
         .article-two-container{
             width: 1500px;
+            height:600px;
             left: calc(50% - 750px);
+            top: calc(50% - 350px);
+            .container-two-image{
+                img{
+                    height:600px;
+                }
+            }
             .container-two-text{
+                h3{ 
+                    font-size: 3em;
+                }
+                p:nth-of-type(1){
+                    font-size: 1em;
+                }
                 p:nth-of-type(2){
                     line-height: 45px;
                     margin: 0 50px 50px 50px;
                     font-size: 1.5em;
                 }
                 .slider{
-                    margin-top: 70px;
+                    margin-top: 0px;
                     img{
-                        width:150px;
+                        width: 120px;
                     }
                 }
             }
         }
     }
 }
+
+
+
 @media(max-width:1600px){
     .article-two{
         height:900px;

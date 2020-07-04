@@ -18,7 +18,7 @@ $font-color-art:#CBAB8D;
 .article-one{
     background-image: url(/img/article-one-bg.png);
     display: flex;
-    height: 70vh;
+    height: 850px;
     padding: 7% 15% 0 10%;
     .article-one-text{
         font-family: 'Raleway', sans-serif;
@@ -26,13 +26,13 @@ $font-color-art:#CBAB8D;
         text-align: center;
         h3{
             font-family: 'Parisienne', cursive;
-            font-size: 4em;
+            font-size: 3em;
         }
         p{
             font-family: 'Playfair Display', serif;
         }
         p:nth-of-type(1){
-            font-size: 1.3em;
+            font-size: 1em;
             text-transform: uppercase;
             color: $font-color-art;
             letter-spacing: 2px;
@@ -42,12 +42,12 @@ $font-color-art:#CBAB8D;
         }
         p:nth-of-type(2){
             line-height: 45px;
-            margin: 0 150px 50px 100px;
-            font-size: 1.5em;
+            margin: 0 100px 50px 100px;
+            font-size: 1.2em;
         }
         h4{
             font-family: 'Parisienne', cursive;
-            font-size: 2.5em;
+            font-size: 2em;
         }
         .chef-photo{
             position: relative;
@@ -79,7 +79,7 @@ $font-color-art:#CBAB8D;
     .article-one-image{
         img{
             position: relative;
-            width: 750px;
+            width: 600px;
             top: 5%;
         }
     }
