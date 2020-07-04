@@ -5,7 +5,10 @@ $font-color-nav: #FBFAF8;
     padding:0;
     margin:0;
 }
-
+.wrapper{ 
+    display: flex;
+    flex-direction: column;
+}
 .bgc{
     display: none;
     position: absolute;
@@ -99,18 +102,18 @@ $font-color-nav: #FBFAF8;
     }
 }
 
-@media(max-width:1024px){
+@media(max-width:1230px){
     .navigation{
         .logo{
             margin-left: 15px;
             a{
-                font-size: 2.5em;
+                font-size: 3em;
             }
         }nav{
             .top-menu{
                 .menu-item{
                     a{
-                        font-size: 0.9em;
+                        font-size: 1.2em;
                         font-weight: 500;
                         padding:10px 10px;
                     }
@@ -120,7 +123,7 @@ $font-color-nav: #FBFAF8;
         
     }
 }
-@media(max-width:768px){
+@media(max-width:1024px){
     .wrapper.active{
         background-color: #000;
         z-index: 99;
@@ -195,7 +198,7 @@ $font-color-nav: #FBFAF8;
         }   
     }
 }
-@media(max-width: 823px) and (orientation:landscape){
+@media(max-width: 812px) and (orientation:landscape){
     .bgc{
         top:15vh;
     }

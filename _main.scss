@@ -70,10 +70,10 @@ $font-color-nav: #FBFAF8;
         }
     }
 }
-@media(max-width:1225px){
+@media(max-width:1230px){
     .main{
         h1{
-            font-size: 4em;
+            font-size: 6em;
             top: 20%;
         }
         h2{
@@ -86,9 +86,12 @@ $font-color-nav: #FBFAF8;
 }
 @media(max-width:1024px) and (orientation:landscape){
     .main{
+        h1{
+            font-size: 4.5em;
+        }
         h2{
             top:30%;
-            font-size: 2em;
+            font-size: 1.5em;
             line-height: 45px;
         }
         #menu-btn{
@@ -141,7 +144,7 @@ $font-color-nav: #FBFAF8;
         }
     }
 }
-@media(max-width:568px) and (orientation:landscape){
+@media(max-width:640px) and (orientation:landscape){
     .main{
         h1{
             font-size: 2em;
